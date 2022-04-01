@@ -15,4 +15,6 @@ order_lines = Table(
 
 )
 
-mapper_registry.map_imperatively(model.OrderLine, order_lines)
+
+def start_mappers():
+    lines_mapper = mapper_registry.map_imperatively(model.OrderLine, order_lines)
